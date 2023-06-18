@@ -1,0 +1,10 @@
+convertion:
+  extention: .jpg
+  prefix: convert-
+  suffix: .test
+
+context:
+  directories:
+  - /home/USER/Downloads
+  - /home/USER/Pictures
+  converter_package: /usr/bin/convert

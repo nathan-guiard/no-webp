@@ -1,0 +1,11 @@
+[Unit]
+Description=no-webp Daemon
+After=network.target
+
+[Service]
+ExecStart=/bin/bash /opt/no-webp/start.sh
+WorkingDirectory=/opt/no-webp
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

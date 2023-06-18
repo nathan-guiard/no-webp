@@ -1,0 +1,7 @@
+convertion:
+  extention: EXT
+
+context:
+  directories:
+  - DIR
+  converter_package: PKG
