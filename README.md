@@ -1,8 +1,6 @@
 # no-webp
 ### A daemon that convert .webp files to another image type on selected directories for systemd systems
 
-(Every "Convertion" and "Extention" must be changed to "Conversion" and "Extension" respectively)
-
 Tired to download .webp files that are not usefull until you convert them? no-webp does it for you without removing the original file, capable to monitor multiple directories and with other configurable options!
 
 ## Installation
@@ -17,33 +15,33 @@ Configuration options are modifiable in the `/opt/no-webp/config.yml` file.
 <br />
 Here are the possible options:
 
-### convertion
+### conversion
 
-##### convertion.extention (Mandatory)
+##### conversion.extension (Mandatory)
 
 This is the type of the file that you want the .webp image to be converted to, it should be compatible with `context.converter_package`
 <br />
 Example:
 ```yaml
-convertion:
-  extention: .jpg
+conversion:
+  extension: .jpg
 ```
-##### convertion.prefix
+##### conversion.prefix
 
 Prefix for the output file
 <br />
 Example:
 ```yaml
-convertion:
+conversion:
   prefix: convert-
 ```
-##### convertion.suffix
+##### conversion.suffix
 
 Suffix for the output file
 <br />
 Example:
 ```yaml
-convertion:
+conversion:
   suffix: .converted
 ```
 
