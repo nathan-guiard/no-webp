@@ -1,5 +1,7 @@
 # no-webp
-### A daemon that convert .webp files to another image tpe on selected directories for systemd systems
+### A daemon that convert .webp files to another image type on selected directories for systemd systems
+
+(Every "Convertion" and "Extention" must be changed to "Conversion" and "Extension" respectively)
 
 Tired to download .webp files that are not usefull until you convert them? no-webp does it for you without removing the original file, capable to monitor multiple directories and with other configurable options!
 
@@ -8,7 +10,7 @@ To install and run the daemon, run this command:
 ```bash
 sudo bash install.sh
 ```
-Note: I suggest you to install the imagemagick package to be able to use `convert` or another similar package.
+Note: I suggest you to install the <a href="https://imagemagick.org/index.php">imagemagick</a> package to be able to use `convert` or another similar package.
 
 ## Configuration
 Configuration options are modifiable in the `/opt/no-webp/config.yml` file.
@@ -17,11 +19,11 @@ Here are the possible options:
 
 ### convertion
 
-##### convertion.extention (Mendatory)
+##### convertion.extention (Mandatory)
 
-This is the type of the file that you want the .webp image to be converted to, it should be compabtible with `context.converter_package`
+This is the type of the file that you want the .webp image to be converted to, it should be compatible with `context.converter_package`
 <br />
-Exemple:
+Example:
 ```yaml
 convertion:
   extention: .jpg
@@ -30,7 +32,7 @@ convertion:
 
 Prefix for the output file
 <br />
-Exemple:
+Example:
 ```yaml
 convertion:
   prefix: convert-
@@ -39,7 +41,7 @@ convertion:
 
 Suffix for the output file
 <br />
-Exemple:
+Example:
 ```yaml
 convertion:
   suffix: .converted
@@ -51,7 +53,7 @@ convertion:
 
 Directories to monitor, every .webp file created in those directories will be converted.
 <br />
-Exemple:
+Example:
 ```yaml
 context:
   directories:
@@ -62,9 +64,9 @@ context:
 
 ##### context.converter_package (Mendatory)
 
-Which package to use to convert the files, should be us like this: `package <file to convert> <output file>`. I suggest `convert` for this package
+Which package to use to convert the files, should be like this: `package <file to convert> <output file>`. I suggest `convert` for this package
 <br />
-Exemple:
+Example:
 ```yaml
 context:
   converter_package: /usr/bin/convert
@@ -72,4 +74,4 @@ context:
 
 ### Exemples
 
-There are exemples in the [example_config](example_config) folder
+There are examples in the [example_config](example_config) folder
